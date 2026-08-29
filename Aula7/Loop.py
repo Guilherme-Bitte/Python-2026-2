@@ -38,7 +38,7 @@ for cont in range (1, qtd_itens + 1):
     total_produto = 0.0
     print(f"\nProduto {cont}: ")
     nome = input("Informe o nome do produto: ")
-    valor = float(input("Informe o valor do produto: "))
+    valor = float(input("Informe o valor do produto: R$"))
     qtd_total_produto = int(input("Informe quantos itens de produto: "))
     total_produto = valor * qtd_total_produto
     produto = (nome, valor, qtd_total_produto, total_produto)
@@ -48,9 +48,9 @@ for cont in range (1, qtd_itens + 1):
 
 produto_mais_caro = max(lista_valores)
 for produto in lista_produto:
-    print(f"Nome: {produto{0}}")
-    print(f"Valor: {produto{1}}")
-    print(f"Quantidade Total: {produto{2}}")
-    print(f"Valor Total: {produto{3}}")
+    print(f"Nome: {produto[0]}")
+    print(f"Valor: R${produto[1]}")
+    print(f"Quantidade Total: {produto[2]}")
+    print(f"Valor Total: R${produto[3]}")
 
-print(f"O produto mais caro é o valor de: {produto_mais_caro}")
+print(f"\nO produto mais caro é o valor de: R${produto_mais_caro}")
